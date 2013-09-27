@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<!--
+  Google HTML5 slide template
+
+  Authors: Luke Mahé (code)
+           Marcin Wichary (code and design)
+           
+           Dominic Mazzoni (browser compatibility)
+           Charles Chen (ChromeVox support)
+
+  URL: http://code.google.com/p/html5slides/
+
+
+  HTML5
+  Hybrid
+  Cross-platform
+  API
+  Distribution
+-->
+
+<html>
+  <head>
+    <title>Paris Phonegap Meetup</title>
+
+    <meta charset='utf-8'>
+    <script src='prettify.js'></script>
+    <script src='slides.js'></script>
+  </head>
+  
+<style>
+    /* Your individual styles here, or just use inline styles if that’s
+       what you want. */
+    .slides.template-default > article:not(.nobackground):not(.biglogo) {
+      //background: url(images/logolong-100.png) bottom right no-repeat !important;  
+      background-color: white !important;  
+    } 
+    h2.normal {
+      position:relative;
+      top:10px;
+    }
+    ul.numbered li {
+      list-style-type: decimal;
+    }
+    .pink {
+      color:#f06;
+    }
+    .djgreen {
+      color: #163f2e;
+    }
+    .nomargin {
+      margin:0px;
+    }
+    h1 {
+      margin-top:120px;
+    }
+
+    h1.bigger {
+      font-weight:bold;
+      font-size: 80px !important;
+    }
+    .centerv {
+     margin-top:200px; 
+    }
+    div.freeticket {
+      padding-top: 40px;
+    }
+    div.features {
+      padding-top: 20px;
+    }
+    div.features div {
+      list-style: none !important;
+      background: transparent url(images/freept.jpg) no-repeat;
+      padding-left:60px;
+      vertical-align: middle;
+      line-height:60px;
+      margin-bottom:20px;
+    }
+    div.freeticket div {
+      list-style: none !important;
+      background: transparent url(images/freept.jpg) no-repeat;
+      padding-left:60px;
+      vertical-align: middle;
+      line-height:60px;
+      margin-bottom:30px;
+    }
+    .bold {
+        font-weight:bold;
+    }
+    div.list div {
+      margin-bottom:15px;
+      font-size:40px
+    }
+  </style>
+
+
+  <body style='display: none'>
+
+    <section class='slides layout-regular template-default'>
+      
+      <!-- Your slides (<article>s) go here. Delete or comment out the
+           slides below. -->
+        
+      <article style="text-align:center">
+        <h1 style='margin-top:30px;font-size:65px'>Phonegap Meetup #5</h1>
+        <br>
+        <img src="images/phonegap.png" width=400 />
+        <br>
+        <div style='font-size:18px'>Paris, Le Players, 27/09/2013</div>
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:100px;margin-top:50px' class=pink align=center >Welcome :)</h1>
+        <br><br>
+        <h1 style='margin-top:30px;font-size:65px'>Thanks to</h1>
+        <br>
+        <img src="images/adobe.png" width=400 />
+        <br>
+      </article>
+
+      <article style="text-align:center">
+        <h1 style='font-size:100px;margin-top:50px' class=pink align=center >Community</h1>
+        <br><br><br>
+        ~500 members on meetup
+        <br><br>
+        @PhonegapParis et @PhonegapFR
+        <br><br>
+        Google+ : Phonegap France
+        <br><br>
+        We need you : share experience, demo apps
+        <br><br>
+        Launch meetups !
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >Quick intro</h1>
+        <br><br><br>
+        Cross platform mobile web developement
+        <br><br>
+        Phonegap = commercial name for open source Cordova
+        <br><br>
+        Phonegap = browser with a javascript bridge to native APIs
+        <br><br>
+        Core rewritten = now more performant and flexible
+        <br><br>
+        Apps can be 100% web, or combine native UI + WebViews
+      </article>
+
+      <style>
+      .bggreen {background:rgb(165, 207, 53);}
+      .bgorange {background:orange;}
+      .bgred {background:rgb(196, 75, 75);}
+      </style>
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >Hybrid</h1>
+        <br><br>
+        <center>
+        <div style='font-size:50px'>Best of both worlds</div>
+        </center>
+        <table>
+          <tr><td>&nbsp;</td><td align=center >Native</td><td align=center >WebApp</td><td align=center >Hybrid</td></tr>
+          <tr><td>Device API</td><td class=bggreen ></td><td class=bgred ></td><td class=bggreen ></td></tr>
+          <tr><td>Store/Market</td><td class=bggreen ></td><td class=bgred ></td><td class=bggreen ></td></tr>
+          <tr><td>Cross platform</td><td class=bgred ></td><td class=bggreen ></td><td class=bggreen ></td></tr>
+          <tr><td>Instant update</td><td class=bgred ></td><td class=bgorange ></td><td class=bggreen ></td></tr>
+          <tr><td>Offline</td><td class=bggreen ></td><td class=bgorange ></td><td class=bggreen ></td></tr>
+          <tr><td>Dev Cost</td><td class=bgorange ></td><td class=bggreen ></td><td class=bggreen ></td></tr>
+        </table>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >How it works</h1>
+        <br><br>
+        <center><img src="images/architecture.jpg" width=700 /></center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >Phonegap day</h1>
+        <br><br><br>
+        Google released Chrome API Cordova plugins
+        <br><br>
+        Even More CLI/NodeJS goodness
+        <br><br>
+        Modern plugin architecture
+        <br><br>
+        TopCoat is awesome
+        <br><br>
+        More Blackberry / Firefox OS / Windows compatibility
+        <br><br>
+        Phonegap app is not always a full web app
+      </article>
+
+      <article>
+        <br><br><br><br>
+        <h1 style='font-size:100px;margin-top:50px' class=pink align=center >Phonegap apps</h1>
+        <br><br>
+        <br><br><br><br>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >TripCase</h1>
+        <br>
+        <center>
+          <img src="images/references/tripcase/phones.jpeg" width=450 />
+          <br>
+          5 stars rating, from native to phonegap
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >Twist</h1>
+        <br><br>
+        <center>
+          <img src="images/references/twist/1.jpg" width=220 />
+          <img src="images/references/twist/2.jpg" width=220 />
+          <img src="images/references/twist/3.jpg" width=220 />
+          <br>
+          4.5 stars rating
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >ExFm</h1>
+        <br><br>
+        <center>
+          <img src="images/references/exfm/jpeg-0.jpg" width=220 />
+          <img src="images/references/exfm/jpeg-2.jpg" width=220 />
+          <img src="images/references/exfm/jpeg-3.jpg" width=220 />
+          <br>
+          4.5 stars rating
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >Untappd</h1>
+        <br><br>
+        <center>
+          <img src="images/references/untappd/screen568x568-1.jpeg" width=220 />
+          <img src="images/references/untappd/screen568x568-2.jpeg" width=220 />
+          <img src="images/references/untappd/screen568x568-3.jpeg" width=220 />
+          <br>
+          700k users, 4 stars rating
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >SeLoger pro</h1>
+        <br><br>
+        <center>
+          <img src="images/references/poliris.png" width=700 />
+          <br>
+          100 apps deployed
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >TEDx Paris</h1>
+        <br><br>
+        <center>
+          <img src="images/references/tedx.jpg" width=700 />
+          <br>
+          by @Joshfire, promoted in iPad TV ad
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >e-coffrefort</h1>
+        <br><br>
+        <center>
+          <img src="images/references/e-coffrefort.jpg" width=500 />
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >impots.gouv</h1>
+        <br><br><br>
+        <center>
+          <img src="images/references/impots/0.jpeg" width=230 />
+          <img src="images/references/impots/1.jpeg" width=230 />
+          <img src="images/references/impots/2.jpeg" width=230 />
+        </center>
+      </article>
+
+      <article>
+        <h1 style='font-size:100px;margin-top:0px' class=pink align=center >Program</h1>
+        <br><br>
+        Intro by Brian Leroux - @brianleroux
+        <br><br>
+        jQueryMobile by Frédéric Falliere - @marcelfalliere
+        <br><br>
+        GWT + Phonegap by Cyrille Savelief - 
+        <br><br>
+        AngularJS for mobile by Julien Bouquillon - @revolunet
+        <br><br>
+        PG CLI tools by Michael Brooks - @mwbrooks
+        <br><br>
+        The new plugin architecture by Anis Kadri - @aniskadri
+        <br><br>
+        TopCoat by Kristofer Josep - @dam
+        <br><br><br><br>
+      </article>
+
+      <article>
+        <br><br><br>
+        <h1 style='font-size:100px;margin-top:50px' class=pink align=center >Enjoy :)</h1>
+        <br><br>
+        <br><br><br><br>
+      </article>
+
+    </section>
+
+  </body>
+</html>
